@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,16 +22,29 @@
       font-size: 3.5em;
       font-weight: bold;
       color: #2c3e50;
+      margin-bottom: 40px;
+    }
+
+    #footer-text {
+      font-size: 1.2em;
+      color: #555;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 20px;
     }
   </style>
 </head>
 <body>
-  <h1>Colorado Special Session is Costing You!</h1>
+  <h1>The Polis Special Session is Costing You $30k a Day!</h1>
   <div id="counter">$0.00</div>
+  <div id="footer-text">
+    Every day the Colorado Legislature is in Special Session, it costs taxpayers $30,000. 
+    Call your state legislator and tell them to end the Special Session.
+  </div>
 
   <script>
-    const startTime = new Date('2025-07-11T00:00:00'); // start date
-    const ratePerSecond = 30000 / 86400; // $ per second
+    const startTime = new Date('2025-07-11T00:00:00');
+    const ratePerSecond = 30000 / 86400;
 
     function updateCounter() {
       const now = new Date();
